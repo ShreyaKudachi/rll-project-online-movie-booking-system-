@@ -1,0 +1,27 @@
+ONLINE MOVIE TICKET BOOKING 
+
+MYSQL:
+
+create database NMSCinemas;
+use nmscinemas;
+drop database nmscinemas;
+
+SELECT * FROM nmscinemas.admin;
+SELECT * FROM nmscinemas.cart;
+SELECT * FROM nmscinemas.customer;
+SELECT * FROM nmscinemas.movie;
+SELECT * FROM nmscinemas.ordered;
+
+INSERT INTO admin(email_id, password)
+VALUES ('g5movies@gmail.com', 'admin@g5movies');
+
+INSERT INTO movie (movie_name, movie_description, movie_duration, movie_rating, movie_ticket_price, movie_image, movie_action_type, movie_avilable)
+VALUES 
+('Spider-Man: Across the Spider-Verse', 'Shameik Moore, Hailee Steinfeld', '2h:20m', 0.0, 350.0, 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFHMCMi3SM6HVf0M-Ua0zLlXgBvdsyTT8JL47mVS58uxEaEPse', 'Historical', true),
+('Meg 2: The Trench', 'Jason Statham, Wu Jing, Sophia Cai, Page Kennedy', '1h:56m', 0.0, 350.0, 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMnMLOYARaIAuDNAejIcbXu3bWNcUyWKj87Pvh1XLooioIiRro', 'Historical', true),
+('Jailer', 'Superstar Rajinikanth, Ramya Krishnan', '2h:48m', 0.0, 350.0, 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqK3_nPn_8UHFtyOFgDtrx1d_DfmngcZ3qbTLHZq7vbIrrllSx', 'Thriller', true),
+('Extraction 2', 'Chris Hemsworth, Golshifteh Farahani, Adam Bessa', '2h 3m', 0.0, 350.0, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6fizNzdu8Tjdouj3avaO4QmsHRHpQNHC4mG7NewjcVlVdJWpA', 'Thriller', true),
+('Barbie', 'Margot Robbie as Barbie, Ryan Gosling as Ken', '1h 54m', 0.0, 350.0, 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaoW2gxmJFDPtqfC9pGL6Rdist9nH9ntMLV7XR1FXpaQj1VrGT', 'Comedy', true),
+('Happiness for Beginners', 'Ellie Kemper as Helen, Luke Grimes as Jake', '1h 43m', 0.0, 350.0, 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyFbF9AN-iYJbcO-XHxK2y3YrqxjFYO5yEb6Y7pSzEcwH6x0yW', 'Comedy', true),
+('Creed III', 'Michael B. Jordan as Adonis "Donnie" Creed (né Johnson)', '1h 56m', 0.0, 350.0, 'https://dx35vtwkllhj9.cloudfront.net/united-artists-releasing/creed-iii/images/regions/us/onesheet.jpg', 'Thriller', true),
+('The Beanie Bubble', 'Zach Galifianakis as Ty, Elizabeth Banks as Robbie', '1h 50m', 0.0, 350.0, 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXGLoqm_S10VJbNTpmOR7mFA_oy4z2ZAfJuk_XXFmFhVC5IpMJ', 'Drama', true);
